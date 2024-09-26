@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Input Form</title>
+</head>
+<body>
+    <div>
+        <h3>Employee Add Form</h3>
+        <form action="http://localhost:5000/employees/add" method="post" >
+            <div>
+                <input type="number" id="_id" name="_id" placeholder="enter id">
+            </div>
+            <div>
+                <input type="text" id="emp_name" name="emp_name" placeholder="enter name">
+            </div>
+            <div>
+                <input type="number" id="emp_salary" name="emp_salary" placeholder="enter salary">
+            </div>
+            <div>
+                <input type="email" id="emp_email" name="emp_email" placeholder="enter email id">
+            </div>
+            <div>
+                <input type="datetime-local" id="emp_joiningDate" name="emp_joiningDate" placeholder="enter emp_joiningDate">
+            </div>
+
+            <br>
+            <div>
+                <input type="text" id="emp_deptCode" name="emp_deptCode" placeholder="enter deptCode">
+            </div><br>
+            <div>
+                <input type="number" id="emp_experience" name="emp_experience" placeholder="enter experience">
+            </div><br>
+            <div>
+                <input type="file" id="emp_employeePic" name="emp_employeePic" placeholder="">
+            </div><br>
+            <div>
+                <input type="submit" value="SEND DATA">
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+</body>
+<script> 
+
+    function submit(values){
+        console.log(values)
+    }
+</script>
+</html>

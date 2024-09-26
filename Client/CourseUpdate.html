@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Input Form</title>
+</head>
+<body>
+    <div>
+        <h3>Course update Form</h3>
+        <form action="http://localhost:3000/course/update" method="post">
+            <div>
+                <input type="number" id="_id" name="_id" placeholder="enter id">
+            </div>
+            <div>
+                <input type="text" id="CourseName" name="CourseName" placeholder="CourseName">
+            </div>
+            <div>
+                <input type="text" id="Description" name="Description" placeholder="Description">
+            </div>
+            <div>
+                <input type="number" id="Price" name="Price" placeholder="Price">
+            </div>
+            <div>
+                <input type="submit" value="SEND DATA">
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
